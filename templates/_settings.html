@@ -1,0 +1,29 @@
+{% import '_includes/forms' as forms %}
+
+{{ forms.textField({
+    first: true,
+    label: "Slack Webhook URL"|t,
+    id: 'webhookUrl',
+    name: 'webhookUrl',
+    value: (settings.webhookUrl is defined ? settings.webhookUrl : null),
+    errors: (settings.webhookUrl is defined ? settings.getErrors('webhookUrl') : null),
+    autofocus: true,
+}) }}
+
+{{ forms.textField({
+    label: "Slack Channel"|t,
+    id: 'channel',
+    name: 'channel',
+    value: (settings.channel is defined ? settings.channel : null),
+    errors: (settings.channel is defined ? settings.getErrors('channel') : null),
+    autofocus: true,
+}) }}
+
+{{ forms.textField({
+    label: "Slack Username"|t,
+    id: 'username',
+    name: 'username',
+    value: (settings.username is defined ? settings.username : null),
+    errors: (settings.username is defined ? settings.getErrors('username') : null),
+    autofocus: true,
+}) }}

@@ -1,0 +1,13 @@
+{
+    "name": "fred/slack",
+    "require-dev": {
+        "maknz/slack": "~1.4"
+    },
+    "authors": [
+        {
+            "name": "Fred Carlsen",
+            "email": "fred@sjelfull.no"
+        }
+    ],
+    "require": {}
+}
