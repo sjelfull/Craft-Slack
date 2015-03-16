@@ -11,7 +11,9 @@ class SlackVariable
             return false;
         }
 
-        return craft()->slack->sendMessage($message);
+        craft()->slack->sendMessage($message);
+        
+        return true;
     }
 
 }
