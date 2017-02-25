@@ -1,5 +1,7 @@
 ## Craft Slack plugin
 
+![Logo](resources/logo.png)
+
 Post messages from [Craft](http://buildwithcraft.com) to [Slack](https://slack.com/r/03jd3mma-041ye75m)
 
 ### Usage
